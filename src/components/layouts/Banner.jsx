@@ -16,7 +16,7 @@ const Banner = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="relative overflow-hidden pt-5 pb-10 bg-body-bg text-text-main transition-colors duration-300">
+    <section className="relative overflow-hidden pt-5 pb-10 bg-white dark:bg-bg-dark-main text-common dark:text-white transition-colors duration-300">
       {/* Desktop */}
       <div className="hidden lg:block">
         <div className="container mx-auto flex items-end justify-between gap-10 min-h-150">

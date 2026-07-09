@@ -31,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-body-bg py-5 relative">
+    <nav className="bg-bg-light dark:bg-common py-5 relative transition-colors duration-300 text-common dark:text-white">
       <div className="container mx-auto px-4 flex items-center justify-between">
         
         {/* Logo */}

@@ -7,8 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@custom-variant dark (&:where(.dark, .dark *));
-
+@custom-variant dark (&:is(.dark *));
 @layer utilities {
   .container {
     @apply max-w-315 mx-auto;
@@ -21,14 +20,7 @@ html {
 
   --color-common: #141414;
   --color-red: #FF494A;
-
-  --color-body-bg: #F4F4F4;
-  --color-card-bg: #FFFFFF;
-  --color-text-main: #141414;
-}
-
-.dark {
-  --color-body-bg: #000000;
-  --color-card-bg: #0D0D0D;
-  --color-text-main: #FFFFFF;
+  
+  --color-bg-light: #F8F9FA;
+  --color-bg-dark-main: #0A0A0A;
 }
