@@ -61,7 +61,7 @@ const Banner = () => {
               <p className="font-rubik text-base text-text-main font-medium">
                 About Me
               </p>
-              <p className="font-rubik text-sm text-[#5D6570] dark:text-[#A3AED0] leading-7 pt-3 max-w-70">
+              <p className="font-rubik text-sm text-[#5D6570] dark:text-[#9F9F9F] leading-7 pt-3 max-w-70">
                 A personal <span className="text-red">portfolio</span> is a
                 collection of to your work, that is achievements, and a skills
                 that <span className="text-red">web design</span> highlights in
