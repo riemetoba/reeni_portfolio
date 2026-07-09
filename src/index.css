@@ -5,22 +5,30 @@
 
 html {
   scroll-behavior: smooth;
-} 
+}
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer utilities {
-    .container {
-        @apply max-w-315 mx-auto;
-    }
+  .container {
+    @apply max-w-315 mx-auto;
+  }
 }
+
 @theme {
-  --font-rajdhani: "Rajdhani", sans-serif; 
-  --font-rubik: "Rubik", sans-serif; 
+  --font-rajdhani: "Rajdhani", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
 
-   --color-common: #141414; 
-   --color-red: #FF494A; 
+  --color-common: #141414;
+  --color-red: #FF494A;
+
+  --color-body-bg: #F4F4F4;
+  --color-card-bg: #FFFFFF;
+  --color-text-main: #141414;
 }
 
-
-
-
+.dark {
+  --color-body-bg: #000000;
+  --color-card-bg: #0D0D0D;
+  --color-text-main: #FFFFFF;
+}
