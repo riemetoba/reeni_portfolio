@@ -67,7 +67,7 @@ const Header = () => {
           </button>
 
           <div className="hidden lg:block text-text-main [&_a]:bg-transparent [&_svg]:text-text-main">
-            <Icons />
+            <Icons variant="header" />
           </div>
           
           {/* Hamburger Icon */}
@@ -112,7 +112,7 @@ const Header = () => {
           </ul>
 
           <div className="mt-8 flex justify-start text-text-main [&_a]:bg-transparent [&_svg]:text-text-main">
-            <Icons />
+            <Icons variant="header" />
           </div>
         </div>
         {/* Mobile Menu */}
@@ -144,7 +144,7 @@ const Header = () => {
           </ul>
 
           <div className="mt-8 flex justify-start text-text-main [&_a]:bg-transparent [&_svg]:text-text-main">
-            <Icons />
+            <Icons variant="header" />
           </div>
         </div>
       </div>
