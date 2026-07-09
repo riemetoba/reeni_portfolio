@@ -5,18 +5,14 @@ import {
   FaFacebookF,
 } from "react-icons/fa";
 
-const Icons = ({ variant }) => {
+const Icons = () => {
   return (
     <div className="flex items-center gap-x-3">
       {[FaInstagram, FaLinkedinIn, FaTwitter, FaFacebookF].map(
         (Icon, index) => (
           <div
             key={index}
-            className={`flex items-center justify-center hover:bg-red hover:text-white transition-all rounded-full h-12 w-12 cursor-pointer shrink-0
-              ${variant === "header" 
-                ? "bg-[#0A0A0A]/5 dark:bg-[#1A1A1A] text-text-main dark:text-white" 
-                : "bg-[#0A0A0A]/5 text-text-main"
-              }`}
+            className="flex items-center justify-center bg-text-main/5 dark:bg-[#1A1A1A] text-text-main dark:text-white hover:bg-red hover:text-white transition-all rounded-full h-12 w-12 cursor-pointer shrink-0"
           >
             <Icon className="text-lg" />
           </div>
