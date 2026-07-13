@@ -10,51 +10,51 @@ import asana from "/src/assets/asana.png";
 
 const Market = () => {
   return (
-    <section>
+    <section className="bg-white dark:bg-bg-dark-main lg:pt-30.5 pt-15 transition-colors duration-300">
       <div className="container lg:pb-20 pb-10 px-5 lg:px-0">
-        <div className="border border-[#D9DDE0] lg:mt-30.5 mt-15">
+        <div className="border border-[#D9DDE0] dark:border-common transition-colors duration-300">
           <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
             <Image
-              className="border border-[#D9DDE0] w-full"
+              className="border border-[#D9DDE0] dark:border-common w-full"
               src={linear}
-              alt=""
+              alt="Linear logo"
             />
             <Image
-              className="border border-[#D9DDE0] w-full"
+              className="border border-[#D9DDE0] dark:border-common w-full"
               src={framer}
-              alt=""
+              alt="Framer logo"
             />
             <Image
-              className="border border-[#D9DDE0] w-full"
+              className="border border-[#D9DDE0] dark:border-common w-full"
               src={notion}
-              alt=""
+              alt="Notion logo"
             />
             <Image
-              className="border border-[#D9DDE0] w-full"
+              className="border border-[#D9DDE0] dark:border-common w-full"
               src={slack}
-              alt=""
+              alt="Slack logo"
             />
           </div>
           <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
             <Image
-              className="border border-[#D9DDE0] w-full"
+              className="border border-[#D9DDE0] dark:border-common w-full"
               src={medium}
-              alt=""
+              alt="Medium logo"
             />
             <Image
-              className="border border-[#D9DDE0] w-full"
+              className="border border-[#D9DDE0] dark:border-common w-full"
               src={upwork}
-              alt=""
+              alt="Upwork logo"
             />
             <Image
-              className="border border-[#D9DDE0] w-full"
+              className="border border-[#D9DDE0] dark:border-common w-full"
               src={amazon}
-              alt=""
+              alt="Amazon logo"
             />
             <Image
-              className="border border-[#D9DDE0] w-full"
+              className="border border-[#D9DDE0] dark:border-common w-full"
               src={asana}
-              alt=""
+              alt="Asana logo"
             />
           </div>
         </div>
@@ -64,5 +64,3 @@ const Market = () => {
 };
 
 export default Market;
-
-
