@@ -16,9 +16,9 @@ const Testimonial = () => {
         </div>
         {/* Title text end  */}
         <div className="lg:flex justify-between items-center gap-8 lg:mt-13 mt-7.5">
-            {/* Flex left  */}
+          {/* Flex left  */}
           <div className="lg:w-1/2 w-full lg:mt-0 mt-7.5">
-            <div className="p-9.5 bg-[#F4F4F4] dark:bg-card-dark border-b-3 border-r-3 border-red rounded-[20px] transition-colors duration-300">
+            <div className="p-9.5 bg-[#F4F4F4] dark:bg-common border-b-3 border-r-3 border-red rounded-[20px] transition-colors duration-300">
               <Image src={testIcon} />
               <p className="text-lg text-[#5D6570] dark:text-[#9F9F9F] font-rubik leading-7.5 mt-10.5 transition-colors duration-300">
                 A personal portfolio is a curated collection of an individual's
@@ -37,7 +37,7 @@ const Testimonial = () => {
           {/* Flex left  */}
           {/* Flex right  */}
           <div className="lg:w-1/2 w-full lg:mt-0 mt-7.5">
-            <div className="p-9.5 bg-[#F4F4F4] dark:bg-card-dark border-b-3 border-r-3 border-red rounded-[20px] transition-colors duration-300">
+            <div className="p-9.5 bg-[#F4F4F4] dark:bg-common border-b-3 border-r-3 border-red rounded-[20px] transition-colors duration-300">
               <Image src={testIcon} />
               <p className="text-lg text-[#5D6570] dark:text-[#9F9F9F] font-rubik leading-7.5 mt-10.5 transition-colors duration-300">
                 A personal portfolio is a curated collection of an individual's
