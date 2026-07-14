@@ -97,7 +97,7 @@ const Footer = () => {
         <p className="text-[11px] lg:text-sm text-[#5D6570] dark:text-[#9F9F9F] font-rubik leading-7.5 text-center lg:text-start transition-colors duration-300">
           © InversWeb 2026 | All Rights Reserved
         </p>
-        <p className="text-[12px] lg:text-sm text-common dark:text-white font-rubik leading-7.5 text-center lg:text-start transition-colors duration-300">
+        <p className="text-[12px] lg:text-sm text-common dark:text-[#9F9F9F] font-rubik leading-7.5 text-center lg:text-start transition-colors duration-300">
           Trams & Condition Privacy Policy Contact Us
         </p>
       </div>
