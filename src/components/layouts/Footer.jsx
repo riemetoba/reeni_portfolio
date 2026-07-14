@@ -24,13 +24,14 @@ const Footer = () => {
         <div className="w-[50%]">
           <Image src={theme === "dark" ? logoWhite : logo} />
           <h2 className="text-[30px] lg:text-[50px] text-common dark:text-white font-rajdhani w-100 lg:leading-15 py-8 transition-colors duration-300">
-            <span className="font-bold">Get Ready</span> To <br />Create Great
+            <span className="font-bold">Get Ready</span> To <br />
+            Create Great
           </h2>
           <div className="flex items-center border-b border-b-[#D9DDE0] dark:border-b-white/10 pb-4 w-65 lg:w-82.5 mb-10 lg:mb-0 transition-colors duration-300">
             <input
               type="email"
               placeholder="Email Address"
-              className="flex-1 bg-transparent text-[#5D6570] dark:text-white outline-none transition-colors duration-300"
+              className="flex-1 bg-transparent placeholder:text-[#5D6570]/60 dark:placeholder:text-white outline-none transition-colors duration-300"
             />
             <CiMail className="text-common dark:text-white transition-colors duration-300" />
           </div>
