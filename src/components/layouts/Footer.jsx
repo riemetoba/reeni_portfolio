@@ -8,21 +8,25 @@ import { HiMail } from "react-icons/hi";
 import { IoLocationSharp, IoCall } from "react-icons/io5";
 
 const Footer = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(
+    document.documentElement.classList.contains("dark") ? "dark" : "light",
+  );
 
   useEffect(() => {
-    const handleStorageChange = () => {
+    const updateTheme = () => {
       setTheme(localStorage.getItem("theme") || "light");
     };
-    window.addEventListener("storage", handleStorageChange);
-    return () => window.removeEventListener("storage", handleStorageChange);
+
+    window.addEventListener("themechange", updateTheme);
+
+    return () => window.removeEventListener("themechange", updateTheme);
   }, []);
 
   return (
     <div className="bg-[#F4F4F4] dark:bg-bg-dark-main py-15 px-5 lg:px-0 transition-colors duration-300">
       <div className="container flex flex-col lg:flex-row items-start justify-between">
         <div className="w-[50%]">
-          <Image src={theme === "dark" ? logoWhite : logo} />
+          <Image key={theme} src={theme === "dark" ? logoWhite : logo} />
           <h2 className="text-[30px] lg:text-[50px] text-common dark:text-white font-rajdhani w-100 lg:leading-15 py-8 transition-colors duration-300">
             <span className="font-bold">Get Ready</span> To <br />
             Create Great

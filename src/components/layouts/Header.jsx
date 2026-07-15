@@ -23,6 +23,7 @@ const Header = () => {
       document.documentElement.classList.remove("dark");
     }
     localStorage.setItem("theme", theme);
+    window.dispatchEvent(new Event("themechange"));
   }, [theme]);
 
   const toggleTheme = () => {
