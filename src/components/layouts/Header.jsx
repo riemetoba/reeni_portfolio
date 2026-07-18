@@ -139,10 +139,12 @@ const Header = () => {
 
         <div
           className={`
-          fixed top-0 right-0 h-full w-97.5 bg-card-bg shadow-2xl z-40 px-8 py-10 transition-transform duration-300 ease-in-out
-          ${isOpen ? "translate-x-0" : "translate-x-full"}
-          lg:hidden
-        `}
+    fixed top-0 right-0 h-full w-97.5 
+    bg-white/80 dark:bg-common/80 backdrop-blur-md 
+    shadow-2xl z-40 px-8 py-10 transition-transform duration-300 ease-in-out
+    ${isOpen ? "translate-x-0" : "translate-x-full"}
+    lg:hidden
+  `}
         >
           <ul className="flex flex-col gap-y-6 mt-16">
             <li className="font-rajdhani text-lg font-bold text-text-main">
