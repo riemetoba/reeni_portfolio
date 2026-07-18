@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../Button";
 import Image from "../Image";
 import bannerImg from "/src/assets/bannerImg.png";
 import bRight from "/src/assets/bRight.png";
 import logo from "/src/assets/logo.png";
+import logoWhite from "/src/assets/logoWhite.png";
 import dropDownImg from "/src/assets/dropDownImg.png";
 import Icons from "../Icons";
 import { FaFacebookMessenger } from "react-icons/fa";
@@ -14,6 +15,25 @@ import { IoMdLocate } from "react-icons/io";
 
 const Banner = () => {
   const [open, setOpen] = useState(false);
+
+  const [theme, setTheme] = useState(
+    document.documentElement.classList.contains("dark") ? "dark" : "light",
+  );
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setTheme(
+        document.documentElement.classList.contains("dark") ? "dark" : "light",
+      );
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section className="relative overflow-hidden pt-5 pb-10 bg-white dark:bg-bg-dark-main text-common dark:text-white transition-colors duration-300">
@@ -153,8 +173,13 @@ const Banner = () => {
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="p-6 bg-[#EDEDED] dark:bg-[#141414] flex justify-between items-center border-b dark:border-white/5">
-          <Image className="w-24 dark:brightness-0 dark:invert" src={logo} alt="Logo" />
+        <div className="p-6 bg-[#EDEDED] dark:bg-common flex justify-between items-center border-b dark:border-white/5">
+          <Image
+            key={theme}
+            className="w-24"
+            src={theme === "dark" ? logoWhite : logo}
+            alt="Logo"
+          />
           <button
             onClick={() => setOpen(false)}
             className="p-2 bg-text-main/5 dark:bg-white/10 text-text-main dark:text-white rounded-full hover:bg-red hover:text-white dark:hover:bg-red transition-colors"
